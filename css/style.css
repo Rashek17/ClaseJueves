@@ -1,0 +1,29 @@
+.lite-youtube-fallback {
+    aspect-ratio: 16 / 9;
+    /* matches YouTube player */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+lite-youtube {
+    width: 700px;
+    /* O un valor fijo como 500px */
+    height: 500px;
+    /* Ajusta según tu necesidad */
+    display: block;
+    margin-top: 50px;
+}
+body{
+    background-color: #000;
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+    
+}
