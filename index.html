@@ -1,34 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina</title>
+    <title>Página</title>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js"></script>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-
 
 <body>
 
-    <h1>Hola mundo</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugit numquam, vero assumenda nobis nesciunt, quos,
-        accusantium reiciendis expedita eligendi dolorum. Unde rem nobis minus dolores qui eaque non earum?</p>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Crear Cuenta</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>o usa tu correo electrónico para registrarte</span>
+                <input type="text" placeholder="Nombre" class="input-field" />
+                <input type="email" placeholder="Correo electrónico" class="input-field" />
+                <input type="password" placeholder="Contraseña" class="input-field" />
+                <button>Registrarse</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <!-- Contenedor de la cara del robot -->
+                <div class="robot-face closed">
+                    <div class="eye left-eye"></div>
+                    <div class="eye right-eye"></div>
+                </div>
 
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, exercitationem quaerat voluptates omnis,
-        dolorum labore dolores, laborum velit corrupti id ipsam rem vitae eius a. Sed vero dignissimos deleniti
-        perspiciatis!
-    </p>
-    <lite-youtube videoid="LII8Nfu1sOE" height="100px"></lite-youtube>-->
-    <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/LII8Nfu1sOE?si=GegjI2Da_f7sbPQ5"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>=-->
+                <h1>Iniciar Sesión</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>o usa tu cuenta</span>
+                <input type="email" placeholder="Correo electrónico" class="input-field" style="width: 68%;" />
+
+                <!-- Contenedor de contraseña con checkbox alineado en una línea -->
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Contraseña" class="input-field" />
+
+                    <!-- Checkbox y texto en una sola línea -->
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="togglePassword">
+                        <label for="togglePassword">Mostrar contraseña</label>
+                    </div>
+                </div>
+                <a href="#">¿Olvidaste tu contraseña?</a>
+                <button>Iniciar Sesión</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>¡Bienvenido de nuevo!</h1>
+                    <p>Para mantenerte conectado con nosotros, inicia sesión con tu información personal</p>
+                    <button class="ghost" id="signIn">Iniciar Sesión</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>¡Hola, Amigo!</h1>
+                    <p>Ingresa tus datos personales y comienza tu viaje con nosotros</p>
+                    <button class="ghost" id="signUp">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            Creado con <i class="fa fa-heart"></i> por
+            Dev Hever Andrés Castaño Suárez
+            <a target="_blank" href="https://hacsportafolio.netlify.app/">aquí</a>.
+        </p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+
 </body>
-
 
 </html>
