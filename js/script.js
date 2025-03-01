@@ -21,11 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
   togglePassword.addEventListener("change", function () {
     passwordInput.type = this.checked ? "text" : "password";
 
-    // Abrir o cerrar los ojos según el estado del checkbox
+    // Abrir o cerrar los ojos y cambiar la boca
     if (this.checked) {
-      robotFace.classList.remove("closed"); // Abre los ojos
+      robotFace.classList.remove("closed"); // Abre los ojos y sonríe
     } else {
-      robotFace.classList.add("closed"); // Cierra los ojos
+      robotFace.classList.add("closed"); // Cierra los ojos y la boca
     }
   });
   // Funcionalidad para mostrar/ocultar contraseña

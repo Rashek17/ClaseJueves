@@ -405,3 +405,64 @@ footer a:hover {
 		/* Ajuste menor para móviles */
 	}
 }
+/* Estilos generales de la cara del robot */
+.robot-face {
+    width: 90px;
+    height: 90px;
+    background: #ddd;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto 15px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 2px solid #aaa;
+    padding-top: 10px; /* Espacio extra para evitar que la boca se junte con los ojos */
+}
+
+/* Contenedor de los ojos */
+.eyes {
+    display: flex;
+    justify-content: space-around; /* Distribuir mejor los ojos */
+    align-items: center;
+    width: 85px; /* Asegurar suficiente espacio para ambos ojos */
+    position: relative;
+    top: 5px;
+}
+
+/* Ojos del robot */
+.eye {
+    width: 16px;
+    height: 16px;
+    background: black;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Ojos cerrados (líneas en lugar de círculos) */
+.closed .eye {
+    transform: scaleY(0.1);
+    background: black;
+    width: 18px;
+    height: 4px;
+    border-radius: 2px;
+}
+
+/* Boca del robot */
+.mouth {
+    width: 35px;
+    height: 6px;
+    background: black;
+    border-radius: 3px;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Boca más cerrada cuando los ojos están cerrados */
+.closed .mouth {
+    transform: scaleY(0.2);
+}
+
+
